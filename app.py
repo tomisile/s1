@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import serverless_wsgi
 
 app = Flask(__name__)
 
@@ -25,6 +26,9 @@ def api_endpoint():
     }
 
     return jsonify(response_data)
+
+def handler(event, context):
+    return serverless_wsgi.handle_request(app, event, context)
 
 if __name__ == '__main__':
     app.run(debug=True)
