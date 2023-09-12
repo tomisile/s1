@@ -17,10 +17,10 @@ def api_endpoint():
     response_data = {
         "slack_name": "tomistark",
         "current_day": "Tuesday",
-        "utc_time": "2023-09-12T22:00:05Z",
+        "utc_time": "2023-09-12T22:30:05Z",
         "track": "backend",
-        "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-        "github_repo_url": "https://github.com/username/repo",
+        "github_file_url": "https://github.com/tomisile/s1/blob/main/app.py",
+        "github_repo_url": "https://github.com/tomisile/s1",
         "status_code": 200
     }
 
